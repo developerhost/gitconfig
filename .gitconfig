@@ -1,0 +1,19 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = kanonhara0609@gmail.com
+	name = developerhost
+[alias]
+	st = status
+	co = commit
+	ch = checkout
+	b = branch
+	al = config --get-regexp ^alias\\.
+	cm = commit -m
+	bdp = branch -d @{-1}
+	fco = git commit --allow-empty -m \"Initial commit\"
+	ac = !git add -A && aicommits -a
